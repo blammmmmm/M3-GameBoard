@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="UTF-8"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/><title>M3 GameBoard Controller</title><link rel="stylesheet" href="./controller.css"/></head>
+<body>
+<div class="wrap">
+  <h1>M3 GameBoard Controller</h1>
+  <div class="sub">Clean controller pass · best-of-3 · icons only</div>
+
+  <div class="panel">
+    <div class="player-grid">
+      <div class="control">
+        <label>Player 1 Name</label>
+        <input id="player1Name" />
+      </div>
+      <div class="control">
+        <label>Player 2 Name</label>
+        <input id="player2Name" />
+      </div>
+      <div class="control">
+        <label>Player 1 Avatar</label>
+        <select id="player1Avatar"></select>
+      </div>
+      <div class="control">
+        <label>Player 2 Avatar</label>
+        <select id="player2Avatar"></select>
+      </div>
+    </div>
+  </div>
+
+  <div class="panel">
+    <div class="game-list">
+      <div class="game-row">
+        <div class="game-label">Game 1</div>
+        <div class="control"><label>Icon</label><select id="game1Icon"></select></div>
+        <div class="btnrow">
+          <button class="green" data-game="1" data-winner="player1">Player 1 Win</button>
+          <button class="red" data-game="1" data-winner="player2">Player 2 Win</button>
+          <button class="secondary" data-clear="1">Clear</button>
+        </div>
+      </div>
+
+      <div class="game-row">
+        <div class="game-label">Game 2</div>
+        <div class="control"><label>Icon</label><select id="game2Icon"></select></div>
+        <div class="btnrow">
+          <button class="green" data-game="2" data-winner="player1">Player 1 Win</button>
+          <button class="red" data-game="2" data-winner="player2">Player 2 Win</button>
+          <button class="secondary" data-clear="2">Clear</button>
+        </div>
+      </div>
+
+      <div class="game-row">
+        <div class="game-label">Game 3</div>
+        <div class="control"><label>Icon</label><select id="game3Icon"></select></div>
+        <div class="btnrow">
+          <button class="green" data-game="3" data-winner="player1">Player 1 Win</button>
+          <button class="red" data-game="3" data-winner="player2">Player 2 Win</button>
+          <button class="secondary" data-clear="3">Clear</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="panel">
+    <div class="actions">
+      <button id="saveSetup">Save Setup</button>
+      <button id="manualWinnerP1" class="green">Winner P1</button>
+      <button id="manualWinnerP2" class="red">Winner P2</button>
+      <button id="toggleAnimations" class="ghost">Animations</button>
+      <button id="resetAll" class="secondary">Reset All</button>
+    </div>
+    <div class="status" id="status">Ready.</div>
+  </div>
+</div>
+<script type="module" src="./controller.js"></script>
+</body></html>
