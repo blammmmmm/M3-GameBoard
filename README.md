@@ -12,9 +12,6 @@ Best-of-3 series tracker overlay for OBS.
 Repo:
 - `https://github.com/blammmmmm/M3-GameBoard`
 
-Pages URLs after deploy:
-- Overlay: `https://blammmmmm.github.io/M3-GameBoard/overlay.html`
-- Controller: `https://blammmmmm.github.io/M3-GameBoard/controller.html`
 
 ## Firebase Rules
 Use:
