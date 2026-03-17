@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>M3 GameBoard Overlay</title>
+  <link rel="stylesheet" href="./overlay.css" />
+</head>
+<body>
+  <div class="card-wrap">
+    <div class="winner-banner" id="winnerBanner">
+      <div class="mini-avatar" id="winnerMiniAvatar"></div>
+      <div class="winner-copy">
+        <div class="label">Series Winner</div>
+        <div class="name" id="winnerMiniName">Marlon</div>
+      </div>
+    </div>
+
+    <div class="card" id="card">
+      <div class="grid">
+        <div class="header-spacer"></div>
+        <div class="game-chip"><div class="game-icon" id="game1Icon">🎯</div><div class="game-label" id="game1Label">COD</div></div>
+        <div class="game-chip"><div class="game-icon" id="game2Icon">🚌</div><div class="game-label" id="game2Label">FN</div></div>
+        <div class="game-chip"><div class="game-icon" id="game3Icon">🚗</div><div class="game-label" id="game3Label">RL</div></div>
+
+        <div class="name-cell player1">
+          <div class="avatar" id="player1Avatar"></div>
+          <div class="player-name" id="player1Name">Marlon</div>
+        </div>
+        <div class="result-cell"><div class="mark pending" id="p1g1">•</div></div>
+        <div class="result-cell"><div class="mark pending" id="p1g2">•</div></div>
+        <div class="result-cell"><div class="mark pending" id="p1g3">•</div></div>
+
+        <div class="name-cell player2">
+          <div class="avatar" id="player2Avatar"></div>
+          <div class="player-name" id="player2Name">Max</div>
+        </div>
+        <div class="result-cell"><div class="mark pending" id="p2g1">•</div></div>
+        <div class="result-cell"><div class="mark pending" id="p2g2">•</div></div>
+        <div class="result-cell"><div class="mark pending" id="p2g3">•</div></div>
+      </div>
+      <div class="confetti-layer" id="confettiLayer"></div>
+    </div>
+  </div>
+  <script type="module" src="./overlay.js"></script>
+</body>
+</html>

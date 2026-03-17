@@ -1,0 +1,49 @@
+:root {
+  --bg: #0b1120;
+  --panel: #11192c;
+  --panel2: #0d1525;
+  --stroke: rgba(255,255,255,0.08);
+  --text: #fff;
+  --muted: rgba(255,255,255,0.7);
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  min-height: 100vh;
+  background: linear-gradient(180deg, #0b1120, #0f172a 58%, #0b1221);
+  color: var(--text);
+  font-family: Inter, system-ui, sans-serif;
+}
+.wrap { max-width: 1060px; margin: 0 auto; padding: 28px; }
+h1 { margin: 0 0 10px; font-size: 34px; }
+.sub { color: var(--muted); margin-bottom: 22px; }
+.grid { display: grid; grid-template-columns: 1.1fr 1.1fr 1fr; gap: 18px; }
+.card {
+  background: linear-gradient(180deg, rgba(255,255,255,0.05), rgba(255,255,255,0.02)), linear-gradient(180deg, var(--panel), var(--panel2));
+  border: 1px solid var(--stroke);
+  border-radius: 20px;
+  padding: 18px;
+  box-shadow: 0 18px 40px rgba(0,0,0,0.22);
+}
+.card h2 { margin: 0 0 14px; font-size: 18px; }
+.field { margin-bottom: 12px; }
+label { display: block; font-size: 12px; font-weight: 800; letter-spacing: .08em; color: var(--muted); margin-bottom: 6px; text-transform: uppercase; }
+input, select {
+  width: 100%; height: 42px; border-radius: 12px; border: 1px solid rgba(255,255,255,0.08); background: rgba(255,255,255,0.04); color: white; padding: 0 12px; font-size: 14px;
+}
+.row2 { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+.controls { display: grid; gap: 10px; }
+button {
+  height: 42px; border: 0; border-radius: 12px; color: #fff; font-weight: 900; letter-spacing: .02em; cursor: pointer;
+  background: linear-gradient(180deg, #2e6cff, #1a49dd); box-shadow: 0 10px 22px rgba(46,108,255,.22);
+}
+button.alt { background: linear-gradient(180deg, #26314d, #19243d); box-shadow:none; }
+button.good { background: linear-gradient(180deg, #35c96e, #22a957); box-shadow: 0 10px 22px rgba(53,201,110,.18); }
+button.bad { background: linear-gradient(180deg, #ff5a74, #d93651); box-shadow: 0 10px 22px rgba(255,90,116,.18); }
+button.warn { background: linear-gradient(180deg, #ffc04d, #df9a10); color:#101114; box-shadow: 0 10px 22px rgba(255,192,77,.18); }
+.mini { display:grid; grid-template-columns: 1fr 1fr 1fr; gap: 8px; }
+.toggle { display: flex; align-items: center; gap: 10px; margin: 8px 0; }
+.toggle input { width: auto; height: auto; }
+.links a { color: #9fc0ff; text-decoration: none; }
+.save-note { color: #9cd0a0; font-size: 13px; min-height: 20px; margin-top: 10px; }
+@media (max-width: 900px) { .grid { grid-template-columns: 1fr; } }
