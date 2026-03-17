@@ -21,6 +21,7 @@ export const iconOptions = {
   "Roblox": "assets/icons/roblox.png",
   "Rocket League": "assets/icons/Rocket League.png",
   "Misc": "assets/icons/misc.png"
+  "MW2": "assets/icons/MW2.webp"
 };
 
 export const defaultSeriesData = {
