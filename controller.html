@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>M3 GameBoard Controller</title>
+  <link rel="stylesheet" href="./controller.css" />
+</head>
+<body>
+  <div class="wrap">
+    <h1>M3 GameBoard Controller</h1>
+    <div class="sub">Best-of-3 series tracker · icons only · Firebase path: series/</div>
+
+    <div class="panel">
+      <div class="grid-2">
+        <div>
+          <label>Player 1 Name</label>
+          <input id="player1Name" />
+        </div>
+        <div>
+          <label>Player 2 Name</label>
+          <input id="player2Name" />
+        </div>
+        <div>
+          <label>Player 1 Avatar</label>
+          <select id="player1Avatar"></select>
+        </div>
+        <div>
+          <label>Player 2 Avatar</label>
+          <select id="player2Avatar"></select>
+        </div>
+      </div>
+    </div>
+
+    <div class="panel">
+      <div class="grid-3">
+        <div>
+          <label>Game 1 Icon</label>
+          <select id="game1Icon"></select>
+          <div class="btnrow" style="margin-top:10px">
+            <button class="green" data-game="1" data-winner="player1">Player 1 Win</button>
+            <button class="red" data-game="1" data-winner="player2">Player 2 Win</button>
+            <button class="secondary" data-clear="1">Clear</button>
+          </div>
+        </div>
+        <div>
+          <label>Game 2 Icon</label>
+          <select id="game2Icon"></select>
+          <div class="btnrow" style="margin-top:10px">
+            <button class="green" data-game="2" data-winner="player1">Player 1 Win</button>
+            <button class="red" data-game="2" data-winner="player2">Player 2 Win</button>
+            <button class="secondary" data-clear="2">Clear</button>
+          </div>
+        </div>
+        <div>
+          <label>Game 3 Icon</label>
+          <select id="game3Icon"></select>
+          <div class="btnrow" style="margin-top:10px">
+            <button class="green" data-game="3" data-winner="player1">Player 1 Win</button>
+            <button class="red" data-game="3" data-winner="player2">Player 2 Win</button>
+            <button class="secondary" data-clear="3">Clear</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="panel">
+      <div class="btnrow">
+        <button id="saveNames">Save Names + Icons</button>
+        <button id="manualWinnerP1" class="green">Trigger Winner P1</button>
+        <button id="manualWinnerP2" class="red">Trigger Winner P2</button>
+        <button id="toggleAnimations" class="ghost">Toggle Animations</button>
+        <button id="resetAll" class="secondary">Reset All</button>
+      </div>
+      <div class="small" id="status" style="margin-top:12px">Ready.</div>
+    </div>
+  </div>
+
+  <script type="module" src="./controller.js"></script>
+</body>
+</html>
