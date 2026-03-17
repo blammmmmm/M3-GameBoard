@@ -20,7 +20,7 @@ export const iconOptions = {
   "FIFA": "assets/icons/fifa.jpeg",
   "Roblox": "assets/icons/roblox.png",
   "Rocket League": "assets/icons/Rocket League.png",
-  "Misc": "assets/icons/misc.png"
+  "Misc": "assets/icons/misc.png",
   "MW2": "assets/icons/MW2.webp"
 };
 
